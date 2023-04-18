@@ -19,11 +19,18 @@ To run it on your own pair of frames, use the following command.
 python run.py --model paper --one ./images/one.png --two ./images/two.png --out ./out.png
 ```
 
-To run in on a video, use the following command.
+To run it on a video, use the following command.
 
 ```
 python run.py --model paper --video ./videos/car-turn.mp4 --out ./out.mp4
 ```
+
+*zzh: To run it on video directories saved in separate frame format (like GoPro dataset), edit and run the following script.*
+
+```
+run_imgdirs_zzh.py
+```
+
 
 For a quick benchmark using examples from the Middlebury benchmark for optical flow, run `python benchmark.py`. You can use it to easily verify that the provided implementation runs as expected.
 
